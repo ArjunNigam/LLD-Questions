@@ -1,0 +1,136 @@
+<mxfile host="65bd71144e">
+    <diagram name="Page-1" id="W8p43GbJlOlltKS1gOk4">
+        <mxGraphModel dx="1086" dy="797" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-4" value="ParkingLot" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="60" width="130" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-7" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;id : Long&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;address : String&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;floors : List&amp;lt;ParkingFloor&amp;gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;gates : List&amp;lt;Gate&amp;gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;status : ParkingLotStatus&lt;/font&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" parent="UgetgK7LKqFdAjzrm5oT-4" vertex="1">
+                    <mxGeometry y="20" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-8" value="ParkingFloor" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="60" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-9" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;id : Long&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;number : int&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;spots : List&amp;lt;ParkingSpot&amp;gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;status : ParkingFloorStatus&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" parent="UgetgK7LKqFdAjzrm5oT-8" vertex="1">
+                    <mxGeometry y="20" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-10" value="ParkingSpot" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="60" width="130" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-11" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;id : Long&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;number : int&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;supportedVehicleTypes : List&amp;lt;VehicleType&amp;gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;status : ParkingSpotStatus&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" parent="UgetgK7LKqFdAjzrm5oT-10" vertex="1">
+                    <mxGeometry y="20" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-12" value="Gate" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="570" y="60" width="110" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-13" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;id : Long&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;number : int&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;operator : Operator&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;status : GateStatus&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;gateType : &amp;nbsp;GateType&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;caret-color: rgba(0, 0, 0, 0); color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; white-space: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20parent%3D%221%22%20style%3D%22swimlane%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20value%3D%22ParkingFloor%22%20vertex%3D%221%22%3E%3CmxGeometry%20height%3D%22160%22%20width%3D%22140%22%20x%3D%22230%22%20y%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20parent%3D%222%22%20style%3D%22text%3Bhtml%3D1%3BwhiteSpace%3Dwrap%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3Balign%3Dleft%3BverticalAlign%3Dmiddle%3Brounded%3D0%3BfontSize%3D16%3B%22%20value%3D%22%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2010px%3B%26quot%3B%26gt%3Bid%20%3A%20Long%26lt%3B%2Ffont%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bfont%20size%3D%26quot%3B1%26quot%3B%26gt%3Bnumber%20%3A%20int%26lt%3Bbr%26gt%3B%26lt%3B%2Ffont%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2010px%3B%26quot%3B%26gt%3Bspots%20%3A%20List%26amp%3Blt%3BParkingSpot%26amp%3Bgt%3B%26lt%3B%2Ffont%26gt%3B%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bfont%20style%3D%26quot%3Bfont-size%3A%2010px%3B%26quot%3B%26gt%3Bstatus%20%3A%20ParkingFloorStatus%26lt%3B%2Ffont%26gt%3B%26lt%3B%2Fdiv%26gt%3B%26lt%3B%2Fdiv%26gt%3B%22%20vertex%3D%221%22%3E%3CmxGeometry%20height%3D%22140%22%20width%3D%22140%22%20y%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E g&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" parent="UgetgK7LKqFdAjzrm5oT-12" vertex="1">
+                    <mxGeometry y="20" width="110" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-14" value="Operator" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="720" y="60" width="90" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-15" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;id : Long&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;name : String&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" parent="UgetgK7LKqFdAjzrm5oT-14" vertex="1">
+                    <mxGeometry y="20" width="90" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-16" value="Vehicle" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="220" width="110" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-17" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;id : Long&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;number : String&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;vehicleType : VehicleType&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" parent="UgetgK7LKqFdAjzrm5oT-16" vertex="1">
+                    <mxGeometry y="20" width="100" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-18" value="Ticket" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="220" width="150" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-19" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;id : Long&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;vehicle : Vehicle&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;assignedParkingSpot : ParkingSpot&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;entryTime : Date&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;entryGate : Gate&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;status : TicketStatus&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;pricingPlan : PricingPlan&lt;/font&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" parent="UgetgK7LKqFdAjzrm5oT-18" vertex="1">
+                    <mxGeometry y="20" width="130" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-20" value="Bill" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="220" width="160" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-21" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;id : Long&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;ticket : Ticket&lt;/font&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;font-size: x-small;&quot;&gt;exitTime : Date&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;exitGate : Gate&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;amount : double&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;status : BillStatus&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;payments : List&amp;lt;Payment&amp;gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" parent="UgetgK7LKqFdAjzrm5oT-20" vertex="1">
+                    <mxGeometry y="20" width="150" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-22" value="Payment" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="590" y="220" width="140" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-23" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;id : Long&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;bill : Bill&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;amount : double&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;status : PaymentStatus&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;mode : PaymentMode&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;timeStamp : Date&lt;/font&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" parent="UgetgK7LKqFdAjzrm5oT-22" vertex="1">
+                    <mxGeometry y="20" width="130" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-25" value="ParkingLotStatus" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="420" width="130" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-26" value="&lt;font size=&quot;1&quot;&gt;OPERATIONAL,&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;UNDER_MAINTAINENCE,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;CLOSED&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" parent="UgetgK7LKqFdAjzrm5oT-25" vertex="1">
+                    <mxGeometry y="30" width="120" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-29" value="ParkingSpotStatus" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="420" width="130" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-30" value="&lt;font size=&quot;1&quot;&gt;AVAILABLE,&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;UNDER_MAINTAINENCE,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;CLOSED,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;OCCUPIED&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" parent="UgetgK7LKqFdAjzrm5oT-29" vertex="1">
+                    <mxGeometry y="30" width="120" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-31" value="VehicleType" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="590" y="400" width="140" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-32" value="&lt;font size=&quot;1&quot;&gt;2_WHEELER,&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;4_WHEELER,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;TRUCK,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;2_WHEELER_EV,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;4_WHEELER_EV&lt;/font&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" parent="UgetgK7LKqFdAjzrm5oT-31" vertex="1">
+                    <mxGeometry y="30" width="120" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-33" value="ParkingFloorStatus" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" parent="1" vertex="1">
+                    <mxGeometry x="215" y="420" width="130" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-34" value="&lt;font size=&quot;1&quot;&gt;OPERATIONAL,&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;UNDER_MAINTAINENCE,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;CLOSED&lt;/font&gt;&lt;span style=&quot;caret-color: rgba(0, 0, 0, 0); color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; white-space: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20parent%3D%221%22%20style%3D%22swimlane%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20value%3D%22ParkingFloorStatus%22%20vertex%3D%221%22%3E%3CmxGeometry%20height%3D%22110%22%20width%3D%22130%22%20x%3D%22210%22%20y%3D%22420%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20parent%3D%222%22%20style%3D%22text%3Bhtml%3D1%3BwhiteSpace%3Dwrap%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3Balign%3Dleft%3BverticalAlign%3Dmiddle%3Brounded%3D0%3BfontSize%3D16%3B%22%20value%3D%22%26lt%3Bfont%20size%3D%26quot%3B1%26quot%3B%26gt%3BAVAILABLE%2C%26lt%3B%2Ffont%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bfont%20size%3D%26quot%3B1%26quot%3B%26gt%3BUNDER_MAINTAINENCE%2C%26lt%3B%2Ffont%26gt%3B%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bfont%20size%3D%26quot%3B1%26quot%3B%26gt%3BCLOSED%2C%26lt%3B%2Ffont%26gt%3B%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bfont%20size%3D%26quot%3B1%26quot%3B%26gt%3BFILLED%26lt%3Bbr%26gt%3B%26lt%3B%2Ffont%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bbr%26gt%3B%26lt%3B%2Fdiv%26gt%3B%26lt%3B%2Fdiv%26gt%3B%22%20vertex%3D%221%22%3E%3CmxGeometry%20height%3D%2290%22%20width%3D%22120%22%20y%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" parent="UgetgK7LKqFdAjzrm5oT-33" vertex="1">
+                    <mxGeometry y="30" width="120" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-35" value="PaymentMode" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="560" width="140" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-36" value="&lt;div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;UPI,&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;CASH,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;DEBIT,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;CREDIT&lt;/font&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" parent="UgetgK7LKqFdAjzrm5oT-35" vertex="1">
+                    <mxGeometry y="20" width="120" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-37" value="PaymentStatus" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="560" width="130" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-38" value="&lt;font size=&quot;1&quot;&gt;SUCCESSFUL,&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;FAILED,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;INPROGRESS&lt;/font&gt;&lt;span style=&quot;caret-color: rgba(0, 0, 0, 0); color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; white-space: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20parent%3D%221%22%20style%3D%22swimlane%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20value%3D%22ParkingFloorStatus%22%20vertex%3D%221%22%3E%3CmxGeometry%20height%3D%22110%22%20width%3D%22130%22%20x%3D%22210%22%20y%3D%22420%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20parent%3D%222%22%20style%3D%22text%3Bhtml%3D1%3BwhiteSpace%3Dwrap%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3Balign%3Dleft%3BverticalAlign%3Dmiddle%3Brounded%3D0%3BfontSize%3D16%3B%22%20value%3D%22%26lt%3Bfont%20size%3D%26quot%3B1%26quot%3B%26gt%3BAVAILABLE%2C%26lt%3B%2Ffont%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bfont%20size%3D%26quot%3B1%26quot%3B%26gt%3BUNDER_MAINTAINENCE%2C%26lt%3B%2Ffont%26gt%3B%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bfont%20size%3D%26quot%3B1%26quot%3B%26gt%3BCLOSED%2C%26lt%3B%2Ffont%26gt%3B%26lt%3B%2Fdiv%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bfont%20size%3D%26quot%3B1%26quot%3B%26gt%3BFILLED%26lt%3Bbr%26gt%3B%26lt%3B%2Ffont%26gt%3B%26lt%3Bdiv%26gt%3B%26lt%3Bbr%26gt%3B%26lt%3B%2Fdiv%26gt%3B%26lt%3B%2Fdiv%26gt%3B%22%20vertex%3D%221%22%3E%3CmxGeometry%20height%3D%2290%22%20width%3D%22120%22%20y%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" parent="UgetgK7LKqFdAjzrm5oT-37" vertex="1">
+                    <mxGeometry y="10" width="120" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-39" value="BillStatus" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" parent="1" vertex="1">
+                    <mxGeometry x="550" y="560" width="130" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-40" value="&lt;font size=&quot;1&quot;&gt;PAID,&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;PARTIALLY_PAID,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;PENDING&lt;/font&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" parent="UgetgK7LKqFdAjzrm5oT-39" vertex="1">
+                    <mxGeometry y="10" width="120" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-41" value="TicketStatus" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="700" width="130" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-42" value="&lt;font size=&quot;1&quot;&gt;ACTIVE,&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;CLOSED&lt;/font&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" parent="UgetgK7LKqFdAjzrm5oT-41" vertex="1">
+                    <mxGeometry y="20" width="80" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-43" value="&amp;lt;&amp;lt;SpotAllocationStrategy&amp;gt;&amp;gt;" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="700" width="170" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-44" value="&lt;font size=&quot;1&quot;&gt;assignParkingSpot(ParkingLot, VehicleType) : ParkingSpot&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" parent="UgetgK7LKqFdAjzrm5oT-43" vertex="1">
+                    <mxGeometry y="20" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-46" value="&amp;lt;&amp;lt;PricingStrategy&amp;gt;&amp;gt;" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="414" y="700" width="150" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-47" value="&lt;font size=&quot;1&quot;&gt;calculateAmount(Ticket) : double&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" parent="UgetgK7LKqFdAjzrm5oT-46" vertex="1">
+                    <mxGeometry y="20" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-49" value="PricingPlan" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" parent="1" vertex="1">
+                    <mxGeometry x="595" y="700" width="130" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-50" value="&lt;font size=&quot;1&quot;&gt;id : Long&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;pricingStrategyType : PricingStrategyType&lt;/font&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" parent="UgetgK7LKqFdAjzrm5oT-49" vertex="1">
+                    <mxGeometry y="20" width="130" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-51" value="PricingStrategyType" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="560" width="130" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="UgetgK7LKqFdAjzrm5oT-52" value="&lt;font size=&quot;1&quot;&gt;WEEKEND,&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;WEEKDAY,&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;FESTIVAL&lt;/font&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=16;" parent="UgetgK7LKqFdAjzrm5oT-51" vertex="1">
+                    <mxGeometry y="25" width="90" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
